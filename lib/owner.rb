@@ -65,6 +65,7 @@ class Owner
     dog_count = @pets[:dogs].size
     cat_count = @pets[:cats].size
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+  end
 
   def self.count
     @@all.length
