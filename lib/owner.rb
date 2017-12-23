@@ -53,6 +53,12 @@ class Owner
     @@all = []
   end
 
+  def sell_pets
+    @pets.each { |type, animals| 
+      animals.each { |animal| animal.mood = "nervous" }
+    }
+  end
+
   def self.count
     @@all.length
   end
